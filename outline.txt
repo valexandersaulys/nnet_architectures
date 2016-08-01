@@ -1,0 +1,105 @@
+----------------------------------------------------------------------------(80)
+
+This is an outline for a gitbook on "Applications for Neural Networks Using
+Keras"
+
+Each Chapter should answer a basic question that is posed.
+
+Mention that Neural Networks are good for "unstructured data" where the features
+are not clear or well-defined (i.e. images, videos, audio signals)
+
+Chapter 1. Why Keras?
+  - Purposes of a Neural Network Library
+    - Differences between something a LinAlg library, tensorflow/theano, and
+      Keras.
+    - Mention Scikit-Learn
+  - Tensorflow & Theano as Backends
+    - Histories
+    - Differences
+  - How to Install
+    - Linux
+    - Mac OS X
+    - Windows (will be tough to do)
+    - Also include Scikit-Learn for metrics
+
+Chapter 2. What makes for a "Good" Neural Network?
+  - Difference between classification vs. Regression problems
+  - Metrics & How they're useful
+    - Classification Metrics
+      - accuracy score
+      - AUC
+      - average precision score
+      - confusion_matrix
+      - log loss
+      - precision score
+      - recall score
+    - Regression Metrics
+      - mean absolute error
+      - mean squared error
+      - r2-score (coefficient of determination)
+  - Common datasets that are used & snippets of code to access and display them
+    - MNIST
+    - IMDB
+    - Cifar
+    - Cifar10
+    - Cifar100
+    - Reuters
+    - iris (in sklearn.datasets)
+    - boston (in sklearn.datasets)
+    - Include how to import CSV data with Pandas & NumPy
+      - CSVs
+      - Images (skimage)
+      - Videos 
+    
+
+
+Chapter 3. What constitutes a "simple" neural network? What are they good for?
+  - "Sequential" model (skipping graphs for now)
+  - Dense multilayer perceptrons
+    - keras.layers.core.Dense
+    - keras.layers.core.Activation
+    - keras.layers.core.Dropout (for muliple layers later on)
+  - Example Datasets
+    - MNIST
+    - iris
+    - boston
+  - Detail how differing the number of layers, neurons, and activation layers
+    will change the neural networks output
+
+Chapter 4. How do we classify Images?
+  - Convolutional Neural Networks
+    - Start with dense layers like before, but mention how ineffective they are
+    - keras.layers.core.Reshape
+    - keras.layers.convolution.Convolution2D
+    - keras.layers.pooling.MaxPooling2D
+    - keras.layers.pooling.AveragePooling2D
+    - 
+  - Example Datasets
+    - Cifar
+    - Cifar10
+    - Cifar100
+
+Chapter 5. What about time series data? Classifying Text?
+  - Recurrent neural networks
+    - keras.layers.recurrent.*
+  - Example Datasets
+    - IMDB
+    - Reuters
+
+Chapter 6. What if I don't have any labels for my data? What if its unstructured?
+  - Autoencoders
+    - start simple, then add noise
+      - keras.layers.noise.*
+    - move on to deep networks, mention how autoencoded layers can be used to
+      pretune a larger suprevised system (semi-suprevised approach)
+  - Example Datasets
+    - MNIST
+    - Cifar
+
+Chapter 7. How do I do neat stuff with neural networks?
+  - How-to on artistic impression neural networks
+  - How-to on deep dreams with neural networks
+  - How-to on random text generation with RNNs
+
+Chapter 8. Are there "plug-and-play" networks I could use?
+  - Mention that already complete neural networks (like GoogLeNet) with licenses
