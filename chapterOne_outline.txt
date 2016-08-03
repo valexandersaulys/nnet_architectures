@@ -1,0 +1,40 @@
+Chapter 1. Why Keras?
+  - What is a Neural Network?
+  - Purposes of a Neural Network Library
+    - Differences between something a LinAlg library, tensorflow/theano, and
+      Keras.
+    - Mention Scikit-Learn
+  - Tensorflow & Theano as Backends
+    - Histories
+    - Differences
+  - How to Install
+    - Linux
+    - Mac OS X
+    - Windows (will be tough to do)
+    - Also include Scikit-Learn for metrics
+
+-------------------------------------------------------------------(71)
+
+What is a Neural Network?
+  * Give motivation & background on ML-connected world
+  * Talk about what machine learning is
+  * Talk about what AI is (difference with ML)
+  * Shift in ML vs. traditional ways of writing programs
+  * Explain what a neural network is (class of ML)
+  * Why I wrote this book
+
+Purpose of a Neural Network Library?
+  * What a computer library is
+  * What nnet libraries solved
+    (1) reliance on cpu
+    (2) lack of comprehension as history progressed
+    (3) networking of computers
+  * What Keras is
+    - how frameworks work and why they're powerful
+    - Tensorflow vs. Theano
+
+How to Install
+  * Linux
+  * Mac
+  * Windows (to-do...)
+  * Scikit-Learn and NumPy

@@ -1,0 +1,137 @@
+Chapter 2. What makes for a "Good" Neural Network?
+  - Difference between classification vs. Regression problems
+  - Metrics & How they're useful
+    - Classification Metrics
+      - accuracy score
+      - AUC
+      - average precision score
+      - confusion_matrix
+      - log loss
+      - precision score
+      - recall score
+    - Regression Metrics
+      - mean absolute error
+      - mean squared error
+      - r2-score (coefficient of determination)
+  - Common datasets that are used & snippets of code to access and display them
+    - MNIST
+    - IMDB
+    - Cifar
+    - Cifar10
+    - Cifar100
+    - Reuters
+    - iris (in sklearn.datasets)
+    - boston (in sklearn.datasets)
+    - Include how to import CSV data with Pandas & NumPy
+      - CSVs
+      - Images (skimage)
+      - Videos
+
+http://www.cs.cornell.edu/Courses/cs578/2003fa/performance_measures.pdf
+https://www.oreilly.com/ideas/evaluating-machine-learning-models/page/3/evaluation-metrics?log-out
+http://blog.turi.com/how-to-evaluate-machine-learning-models-part-2a-classification-metrics
+
+-----------------------------------------------------------(63)
+
+Difference between classification & regression problem
+  * What a classification problem is
+  * What a regression problem is
+  * Give example of spam classifier vs. ex. of Boston House
+    prices dataset
+
+Metrics & How they're Useful
+  * Accuracy Score
+    - Computes % correctly guessed (classification)
+    - http://machinelearningmastery.com/classification-accuracy-is-not-enough-more-performance-measures-you-can-use/
+    - Its not entirely the best to use because it doesn't take
+      into consideration low occurence of certain numbers (see
+      example above)
+  * Area Under Curve
+    - http://fastml.com/what-you-wanted-to-know-about-auc/
+    - https://en.wikipedia.org/wiki/Receiver_operating_characteristic
+    - Explain an ROC (Receiver Operating Characteristic) curve
+    - Explain how AUC just computer the area under this curve
+    - "When using normalized units, the area under the curve (often referred to as simply the AUC, or AUROC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative')."
+  * Precision Score
+    - True Positives over False & True Positives
+    - How many selected items are relevant?
+    - ex. of cancer diagnosis.
+    - ex. of where having a false positive is detrimental
+  * Recall Score
+    - True Positives over True Positives & False Negatives
+    - How many relevant items are selected?
+    - ex. of situation where bagging every important part is
+      necesary.
+    - Counter-ex would be where somebody could sift through
+      found items (low-precision, high-recall) vs. the african
+      spammers (high-precision, low-recall). Human-intervention
+    - Mention precision-recall curve here <http://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf>
+  * Average Precision Score
+    - Corresponds to area under precision-recall curve
+    - https://sanchom.wordpress.com/2011/09/01/precision-recall/
+    - http://stats.stackexchange.com/questions/157012/area-under-precision-recall-curve-auc-of-pr-curve-and-average-precision-ap
+    - Single number used to summarize recall and precision
+  * Confusion Matrix
+    - Simple way to summarize how one's classification is
+      coming along.
+    - Give ex. of perfect classification in confusion matrix.
+  * Log Loss
+    - Relies on probability
+    - gives indication as to how confident the classifier is
+
+Regression Metrics
+  * mean absolute error
+    - just show the formula and explain it
+  * mean squared error
+    - gives higher weight to large errors than absolute error
+  * r2-score
+    - gives idea as to how approximately relevant a classifier
+
+Objectives [ Drop this section? ]
+  * what is an objective?
+    - how keras works with object errors when training neural
+      networks
+    - generally not too important to worry over unless you're
+      gaming for theoretical justification
+  * mean_squared_error
+    - see above
+  * mean_absolute_error
+    - see above
+  * mean_absolute_percentage_score
+    - ? to-do
+  * mean_squared_logarithmic_error
+    - ? to-do
+  * squared_hinge
+    - https://www.quora.com/How-do-you-decide-which-loss-function-to-use-for-machine-learning
+  * hinge
+    - 
+  * binary_crossentropy
+    - primary method for binary classification
+  * categorical_crossentropy
+    - for multi-class classification
+  * sparse_categorical_crossentropy
+  * kullback_leibler_divergence
+  * poisson
+  * cosine_proximity
+
+Common Datasets
+  * https://keras.io/datasets/
+    - for each: give explanations as to how they look and why
+  * MNIST
+  * IMDB
+    - Explain how its encoded
+  * Cifar
+    - https://www.cs.toronto.edu/~kriz/cifar.html
+    - General image analysis, used in huge competitions
+    - name some competition winners
+  * Cifar10
+    - What the cifar10 dataset looks like and its specs
+  * Cifar100
+    - What the cifar100 dataset looks like and its specs
+  * Reuters
+  * iris
+  * boston
+  * General code snippets to import CSV data
+    - CSVs
+    - images (skimage, I should have preivous examples)
+    - videos (way of breaking into a series of frames)
