@@ -2,3 +2,5 @@
 *.mobi
 *~
 *.log
+*#
+scratch_work/*

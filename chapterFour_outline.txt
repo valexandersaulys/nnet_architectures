@@ -1,0 +1,31 @@
+Chapter 4. How do we classify Images?
+  - Convolutional Neural Networks
+    - Start with dense layers like before, but mention how ineffective they are
+    - keras.layers.core.Reshape >>> this might fit better in chapter 3
+    - keras.layers.convolution.Convolution2D
+    - keras.layers.pooling.MaxPooling2D
+    - keras.layers.pooling.AveragePooling2D
+  - Example Datasets
+    - Cifar
+    - Cifar10
+    - Cifar100
+
+----------------------------------------------------------------------------(80)
+
+Convolutional Neural Networks
+  * Explain the history with relevant papers
+  * Use the example of MNIST to show how effective CNNs can be vs. Dense MLPs
+  * What a convolution does --> algorithm and hands-wavey explanation
+  * What MaxPooling does
+  * What AveragePooling does
+
+Examples (do arbitrary, guts-first ideas)
+  * Cifar
+    - might be too bit to do straight up
+  * Cifar10
+  * Cifar100
+
+Complex Examples
+  * VGG16
+  * Prof. Hinton's winner in 2010
+  * etc. etc. (Keras' website should have examples included)

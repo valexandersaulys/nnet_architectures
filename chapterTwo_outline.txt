@@ -30,6 +30,7 @@ Chapter 2. What makes for a "Good" Neural Network?
 http://www.cs.cornell.edu/Courses/cs578/2003fa/performance_measures.pdf
 https://www.oreilly.com/ideas/evaluating-machine-learning-models/page/3/evaluation-metrics?log-out
 http://blog.turi.com/how-to-evaluate-machine-learning-models-part-2a-classification-metrics
+https://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html
 
 -----------------------------------------------------------(63)
 
@@ -122,15 +123,25 @@ Common Datasets
     - Explain how its encoded
   * Cifar
     - https://www.cs.toronto.edu/~kriz/cifar.html
+    - http://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
     - General image analysis, used in huge competitions
-    - name some competition winners
+    - name some competition winners with linking papers
+    - 80 million large so its rarely used straight up, usually subsets
   * Cifar10
     - What the cifar10 dataset looks like and its specs
+    - 60,000 image subset with 10 classes
   * Cifar100
     - What the cifar100 dataset looks like and its specs
+    - 100,000 image subset with 100 classes
   * Reuters
-  * iris
-  * boston
+    - training a sequence of words corresponding to integers of some vocabulary
+  * iris [from sklearn]
+    - https://archive.ics.uci.edu/ml/datasets/Iris/
+    - Developed by R.A. Fisher, a well known genomics figure
+    - Uses attributes of a flower to determine what kind of flower 
+  * boston [from sklearn]
+    - Boston housing prices
+    - regression problem
   * General code snippets to import CSV data
     - CSVs
     - images (skimage, I should have preivous examples)

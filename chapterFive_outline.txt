@@ -1,0 +1,26 @@
+Chapter 5. What about time series data? Classifying Text?
+  - Recurrent neural networks
+    - keras.layers.recurrent.SimpleRNN
+    - keras.layers.recurrent.GRU
+    - keras.layers.recurrent.LSTM
+  - Example Datasets
+    - IMDB
+    - Reuters
+    - I need a plain 'ol time series dataset!
+
+
+https://keras.io/layers/recurrent/
+
+----------------------------------------------------------------------------(80)
+
+Recurrent Neural Networks
+  * Explain what they are (https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+  * Explain some attributes about them
+    - 'stateful'ness for reusing computed states as the initial states for the
+      samples in the next batch
+    - 'consume_less' for CPU vs GPU usage
+    - 'unroll'ing a network
+      > http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/
+      > more memory intensive
+      > the whole network is computer as a monolith (unrolled) vs as a pastiche of
+        pieces (rolled).

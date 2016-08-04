@@ -9,6 +9,7 @@ Mention that Neural Networks are good for "unstructured data" where the features
 are not clear or well-defined (i.e. images, videos, audio signals)
 
 Chapter 1. Why Keras?
+  - What is a Neural Network?
   - Purposes of a Neural Network Library
     - Differences between something a LinAlg library, tensorflow/theano, and
       Keras.
@@ -51,8 +52,6 @@ Chapter 2. What makes for a "Good" Neural Network?
       - Images (skimage)
       - Videos 
     
-
-
 Chapter 3. What constitutes a "simple" neural network? What are they good for?
   - "Sequential" model (skipping graphs for now)
   - Dense multilayer perceptrons
@@ -73,7 +72,6 @@ Chapter 4. How do we classify Images?
     - keras.layers.convolution.Convolution2D
     - keras.layers.pooling.MaxPooling2D
     - keras.layers.pooling.AveragePooling2D
-    - 
   - Example Datasets
     - Cifar
     - Cifar10
@@ -103,3 +101,5 @@ Chapter 7. How do I do neat stuff with neural networks?
 
 Chapter 8. Are there "plug-and-play" networks I could use?
   - Mention that already complete neural networks (like GoogLeNet) with licenses
+
+http://edutechwiki.unige.ch/en/Textbook_writing_tutorial

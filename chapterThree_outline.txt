@@ -1,0 +1,52 @@
+Chapter 3. What constitutes a "simple" neural network? What are they good for?
+  - "Sequential" model (skipping graphs for now)
+  - Dense multilayer perceptrons
+    - keras.layers.core.Dense
+    - keras.layers.core.Activation
+    - keras.layers.core.Dropout (for muliple layers later on)
+  - Example Datasets
+    - MNIST
+    - iris
+    - boston
+  - Detail how differing the number of layers, neurons, and activation layers
+    will change the neural networks output
+
+----------------------------------------------------------------------------(80)
+
+"Sequential" Model
+  * Include a diagram of a model of neural networks, both as a web and as blocks
+  * Show simple code for a "sequential" model
+  * Mention the need for compiling the model <keras.model.compile>
+  * How classes are pre-processed (pandas.DataFrame.get_dummies())
+  * Also mention fitting the model and common errors that can come up
+    - when nothing is passed to the model
+    - when something too large is passed
+    - when a regression problem is being solved and a wrong error is picked
+      ("crossentropy" for regression or "mean_absolute_error" for classification)
+  * Also mention <keras.model.layers> and how it can be used to access sub-layers
+    - uses?
+  * Example with MNIST (classification)
+    - Keep it flat with no convolutional neural networks
+    - Use basic examples I came up with and from the best methods that exist (
+      either find those online or via the best examples that exist
+    - Mention need of using crossentropy
+    - Build stats here...
+      > changing size of hidden layer
+      > changin number of hidder layers (fixed size on each layer)
+      > changing the final error
+      > changing the type of activation layer used
+  * Also mention autoencoders for pre-training using MNIST as example?
+    - Idk where else to include this and it would be interesting...
+  * Example with Iris (classification)
+    - Use basic examples of nets to build
+    - Reasons why certain changes might be better to use here vs. MNIST (i.e.
+      "strong" handcrafted features vs. the more vague features of an image
+    - Build stats here...
+      > changing size of hidden layer
+      > changin number of hidder layers (fixed size on each layer)
+      > chan  ging the final error
+      > changing the type of activation layer used
+  * Example with Boston dataset (regression)
+    - Difference between regression vs. classification problems
+      > "crossentropy" vs. other types of errors at the end of a network
+    - What <keras.model.evaluation()> does 
